@@ -1,0 +1,299 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  word-break: break-word;
+}
+
+img,
+img a {
+  display: inline-block;
+  content: "";
+  border: none;
+}
+
+:root {
+  --font: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont,
+    system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo",
+    "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
+  --background: #f1edd8;
+  --basic-normal-text: #3a3a3a;
+  --basic-key-color: #e14545;
+}
+
+a {
+  color: var(--basic-normal-text);
+  text-decoration-line: none;
+}
+
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Pretendard Variable", Pretendard, -apple-system,
+    BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
+    "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  color: var(--basic-normal-text);
+  line-height: 1.4;
+  letter-spacing: -0.3px;
+  height: auto;
+  background-color: var(--thva01-light-yellow);
+}
+
+.responsive-iframe {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+  border: none;
+}
+
+:root {
+  --font: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont,
+    system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo",
+    "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
+  --elip-background: #ffffff;
+  --elip-normal-text: #0678bf;
+  --elip-title-text: #ff5364;
+  --elip-second-text: #54bdb6;
+  --xcla-background: #3d3d3d;
+  --xcla-normal-text: #dcff1a;
+  --xcla-title-text: #e31e68;
+  --xcla-second-text: #d1b5ff;
+  --basic-normal-text: #f7f7f7;
+}
+
+a {
+  color: var(--thva01-yellow);
+  text-decoration-line: none;
+}
+
+.background,
+.background2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  z-index: -2;
+  transition: opacity 1s ease-in-out;
+}
+
+.background {
+  background-image: url("../images/main_bg.jpg");
+  opacity: 1;
+}
+
+.background2 {
+  background-image: url("../images/main_bg2.jpg");
+  opacity: 0;
+  z-index: -1;
+}
+
+body {
+  font-family: "Pretendard Variable", Pretendard, -apple-system,
+    BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
+    "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+  letter-spacing: -0.3px;
+  word-wrap: break-word;
+  word-break: break-word;
+}
+
+@media (min-width: 1375px) and (max-width: 1700px) {
+  .section_title {
+    left: -2vw;
+    top: 0;
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1374px) {
+  .section_title {
+    left: -10vw;
+    top: 12vh;
+    font-size: 30px;
+    transform: rotate(270deg);
+  }
+}
+
+@media (max-width: 980px) {
+  .footer_container {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .footer_info {
+    text-align: center;
+  }
+
+  .footer_right span {
+    text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  body {
+    overflow-x: hidden;
+    width: 100%;
+    font-size: 12px;
+  }
+
+  .jacket_item,
+  .notice_item,
+  .media_item,
+  .tracklist_item,
+  .staff_item {
+    width: auto;
+  }
+
+  .scroll_wrap {
+    width: 100%;
+    padding: 0;
+  }
+
+  .logo {
+    width: 100%;
+    height: 100vh;
+    background-size: 200px 50px;
+  }
+
+  .info,
+  .tracklist,
+  .staff {
+    border-radius: 0;
+  }
+
+  .info_container,
+  .media_container,
+  .notice_container,
+  .tracklist_container,
+  .staff_container,
+  .footer_container {
+    width: 100vw;
+    flex-shrink: 0;
+    padding: 0;
+    flex-direction: column;
+  }
+  .logo_wrap {
+    flex-direction: column;
+  }
+
+  .section_title {
+    position: relative;
+    font-size: 24px;
+    padding: 12px 0;
+    text-align: center;
+    background-color: var(--thva01-red);
+    color: var(--thva01-light-yellow);
+  }
+
+  .info_jacket {
+    width: 100vw;
+    height: auto;
+  }
+
+  .info_jacket_download {
+    font-size: 14px;
+    border-radius: 0;
+  }
+
+  .info_list {
+    gap: 8px;
+    line-height: 18px;
+  }
+  .info .info_title,
+  .info .info_text {
+    font-size: 12px;
+  }
+
+  .info_jacket_line {
+    margin-bottom: 0;
+  }
+
+  .info_store_line {
+    min-height: 30px;
+  }
+  .info_store_link {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .divider {
+    width: 100%;
+    height: 0px;
+    margin: 0;
+    border: 0;
+  }
+
+  .responsive-iframe {
+    width: 100%;
+    height: auto;
+  }
+
+  .responsive-iframe.youtube {
+    aspect-ratio: 4 / 3;
+  }
+
+  .responsive-iframe.soundcloud {
+    height: 300px;
+    aspect-ratio: 16 / 9;
+  }
+
+  .tracklist {
+    line-height: 20px;
+  }
+
+  .tracklist .track_number {
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  .tracklist .track_title {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .tracklist .track_sub {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .staff .staff_position,
+  .staff .staff_name {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .staff_position {
+    width: 21%;
+  }
+
+  .staff_name {
+    width: 79%;
+  }
+
+  /* Footer */
+  .footer_container {
+    background-color: var(--thva01-red);
+    padding: 12px;
+  }
+
+  .footer_left {
+    flex-direction: column;
+    margin-bottom: 12px;
+  }
+}
